@@ -6,7 +6,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import categoryRoutes from "./routes/categoryRoutes.js";
 import productroutes from "./routes/productroute.js";
-import path, { dirname } from "path";
+
 
 
 const app = express();
@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 dotenv.config();
 connectDb();
 app.use(cors());
-app.use(express.static(path.join(__dirname, "./client/build")));
+
 app.use("/api/v1/auth", authroutes);
 
 app.use("/api/v1/category", categoryRoutes);
