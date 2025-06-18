@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.footer{
+  min-height: 19vh;
+  background-color: black;
+  color: white;
+  /* padding: 25px 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footerContent a{
+  margin-left: 5px;
+  color: white;
+  text-decoration: none;
+}
+.registerForm{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  background-color: rgb(225, 239, 234);
+  border-radius: 5px;
+  padding: 0 20px;
+  padding-bottom: 3PX;
+  width: 40%;
+margin-top: 7px;
+ 
+}
+.registerForm input{
+  display: block;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px ;
+}
+.registerForm button{
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+.registerForm h1{
+  color: teal;
+}
+.pnfd{
+position:absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+}
+.pnfd h1{
+color: red;
+}
+#braintree-dropin-container {
+  min-height: 300px; /* Ensure it has height */
+  display: block;
+}
