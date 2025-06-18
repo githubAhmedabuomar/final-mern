@@ -7,11 +7,11 @@ import cors from "cors";
 import categoryRoutes from "./routes/categoryRoutes.js";
 import productroutes from "./routes/productroute.js";
 import path, { dirname } from "path";
-import { fileURLToPath } from "url";
+
 
 const app = express();
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 dotenv.config();
